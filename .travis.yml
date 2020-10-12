@@ -26,9 +26,7 @@ language: c
 script:
   - ./tests/ci-install.sh
   - ci_parallel=2 ci_sudo=yes ./tests/ci-build.sh
-arch:
-  - amd64
-  - ppc64le
+
 env:
   # GLib 2.56
   - ci_suite=bionic
